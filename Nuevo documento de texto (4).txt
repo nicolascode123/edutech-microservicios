@@ -1,21 +1,15 @@
-PARA HACER CORRER EL PROYECTO 
-./mvnw spring-boot:run
-install
-.\mvnw.cmd clean install
+Autenticación (puerto 8103)
+Base URL:
+http://localhost:8103/auth
 
-URL USUARIOS
-http://localhost:8100/usuarios 
+Usuarios (puerto 8100)
+Base URL:
+http://localhost:8100/usuarios
 
+Cursos (puerto 8101)
+Base URL:
+http://localhost:8101/cursos
 
-URL AUTENTIFICACION
-http://localhost:8103/auth/register
-
-http://localhost:8103/auth/login
-
-URL CURSOS
-http://localhost:8102/cursos
-
-
-URL NOTIFICACIONES 
-http://localhost:8101/usuarios 
-
+Notificaciones (puerto 8102)
+Base URL:
+http://localhost:8102/notificaciones
