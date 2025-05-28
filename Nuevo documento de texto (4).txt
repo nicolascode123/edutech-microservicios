@@ -4,16 +4,19 @@ install
 .\mvnw.cmd clean install
 
 URL USUARIOS
-http://localhost:8080/usuarios 
+http://localhost:8101/usuarios 
 
 URL AUTENTIFICACION
-http://localhost:8081/auth/register
+http://localhost:8100/auth/register
 
-http://localhost:8081/auth/login
+http://localhost:8100/auth/login
 {
   "username": "elpapu",
   "password": "clave123"
 }
 
 URL CURSOS
-http://localhost:8083/cursos
+http://localhost:8102/cursos
+
+URL NOTIFICACIONES 
+http://localhost:8103/usuarios 
