@@ -1,0 +1,17 @@
+PARA HACER CORRER EL PROYECTO 
+./mvnw spring-boot:run
+
+URL USUARIOS
+http://localhost:8080/usuarios 
+
+URL AUTENTIFICACION
+http://localhost:8081/auth/register
+
+http://localhost:8081/auth/login
+{
+  "username": "elpapu",
+  "password": "clave123"
+}
+
+URL CURSOS
+http://localhost:8083/cursos
