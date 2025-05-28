@@ -1,60 +1,63 @@
-# EduTech Microservicios
+Body JSON ejemplo:
+{
+  "nombre": "Java Básico",
+  "descripcion": "Curso introductorio de Java"
+}
+PUT /cursos/{id}
+Actualizar curso
+Body JSON ejemplo:
+{
+  "nombre": "Java Avanzado",
+  "descripcion": "Curso avanzado de Java"
+}
+DELETE /cursos/{id}
+Eliminar curso (no body).
 
-## Microservicios incluidos:
-
-- ms-usuarios: Gestión de usuarios.
-- ms-autenticacion: Registro y login.
-- ms-cursos: Administración de cursos.
-- ms-notificaciones: Envío de notificaciones.
-
-## Requisitos
-
-- Java JDK 17
-- Visual Studio Code con extensiones Java
-- Postman
 
 
+2. Notificaciones (puerto 8102)
+GET /notificaciones
+Listar todas las notificaciones (no body).
+POST /notificaciones
+Enviar y guardar notificación
+Body JSON ejemplo:
+{
+  "destinatario": "usuario@example.com",
+  "mensaje": "Tu curso ha sido aprobado"
+}
 
-## Cómo ejecutar cada microservicio
 
-Abre una terminal distinta para cada uno y corre:
+3. Usuarios (puerto 8100)
+GET /usuarios
+Listar todos los usuarios (no body).
 
-### ms-usuarios (Puerto 8081)
-```bash
-cd ms-usuarios
-./mvnw spring-boot:run
-Endpoints:
+POST /usuarios
+Crear usuario
+Body JSON ejemplo:
+{
+  "username": "juan123",
+  "password": "1234",
+  "email": "juan@example.com"
+}
 
-POST http://localhost:8081/api/usuarios (crear usuario)
 
-ms-autenticacion (Puerto 8082)
-bash
-Copiar
-Editar
-cd ms-autenticacion
-./mvnw spring-boot:run
-Endpoints:
 
-POST http://localhost:8082/auth/register (registrar usuario)
+4. Autenticación (puerto 8103)
+POST /auth/login
+Iniciar sesión
+Body JSON ejemplo:
 
-POST http://localhost:8082/auth/login (login)
 
-ms-cursos (Puerto 8083)
-bash
-Copiar
-Editar
-cd ms-cursos
-./mvnw spring-boot:run
-Endpoints:
+{
+  "username": "juan123",
+  "password": "1234"
+}
+POST /auth/register
+Registrar usuario
+Body JSON ejemplo:
 
-POST http://localhost:8083/cursos (crear curso)
-
-ms-notificaciones (Puerto 8084)
-bash
-Copiar
-Editar
-cd ms-notificaciones
-./mvnw spring-boot:run
-Endpoints:
-
-POST http://localhost:8084/notificaciones (enviar notificación)
+{
+  "username": "juan123",
+  "password": "1234",
+  "email": "juan@example.com"
+}
