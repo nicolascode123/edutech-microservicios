@@ -1,0 +1,8 @@
+E. Entregables
+Código fuente: listo.
+
+Configuración BD: está en application.properties y uso de H2.
+
+Documentación CI/CD: lo que hayas hecho o explicar.
+
+Resultados pruebas unitarias: si tienes, incluir.
