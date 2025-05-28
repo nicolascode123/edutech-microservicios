@@ -5,18 +5,40 @@ install
 
 URL USUARIOS
 http://localhost:8100/usuarios 
+{
+  "nombre": "Juan",
+  "apellido": "Pérez",
+  "email": "juan.perez@correo.com"
+}
+
 
 URL AUTENTIFICACION
 http://localhost:8103/auth/register
 
 http://localhost:8103/auth/login
 {
-  "username": "elpapu",
-  "password": "clave123"
+  "username": "admin",
+  "password": "admin123"
+}
+{
+  "username": "nuevoUsuario",
+  "password": "claveSegura123",
+  "email": "correo@ejemplo.com"
 }
 
 URL CURSOS
 http://localhost:8102/cursos
+{
+  "titulo": "Introducción a Spring Boot",
+  "descripcion": "Curso básico para aprender Spring Boot",
+  "duracion": "10 horas"
+}
 
 URL NOTIFICACIONES 
 http://localhost:8101/usuarios 
+{
+  "destinatario": "juan@ejemplo.com",
+  "mensaje": "¡Bienvenido al sistema!",
+  "tipo": "email"
+}
+
