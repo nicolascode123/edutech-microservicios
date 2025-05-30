@@ -13,3 +13,11 @@ http://localhost:8101/cursos
 Notificaciones (puerto 8102)
 Base URL:
 http://localhost:8102/notificaciones
+
+ms-usuarios: Gestiona la información de los usuarios del sistema.
+
+ms-autentificacion: Maneja la autenticación y verificación de credenciales.
+
+ms-cursos: Administra los cursos disponibles en la plataforma.
+
+ms-notificaciones: Registra y gestiona las notificaciones del sistema.
