@@ -1,3 +1,6 @@
+para arrancar el ms
+mvn spring-boot:run
+
 Autenticación (puerto 8103)
 Base URL:
 http://localhost:8103/auth
