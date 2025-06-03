@@ -3,7 +3,7 @@ Body JSON ejemplo:
   "nombre": "Java Básico",
   "descripcion": "Curso introductorio de Java"
 }
-PUT /cursos/{id}
+PUT /cursos/1
 Actualizar curso
 Body JSON ejemplo:
 {
