@@ -1,5 +1,8 @@
 para arrancar el ms
 mvn spring-boot:run
+para solucionar lo de error de maven:
+instalar maven,crear la carpeta apache en disco c despues la que sigue dentro de apache y luego colocar el archvio extraido del zip dentro de esa carpeta
+y luego los pasos del PATH/bin.
 
 Autenticación (puerto 8103)
 Base URL:
